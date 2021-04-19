@@ -13,11 +13,6 @@ const questions = [
   },
   {
     type: "input",
-    name: "userName",
-    message: "What is your GitHub username?",
-  },
-  {
-    type: "input",
     name: "description",
     message: "Describe your project",
     default: "No project description available",
@@ -31,16 +26,38 @@ const questions = [
       { name: "MIT", value: "MIT" },
     ],
   },
+  {
+    type: "input",
+    name: "installation",
+    message:
+      "What do users need to do in order to properly install your application?",
+  },
+  {
+    type: "input",
+    name: "usage",
+    message: "What are the uses for your application?",
+  },
+  {
+    type: "input",
+    name: "contributor",
+    message: "List the name of the contributor to the application",
+  },
   // {
-  //   type: "input",
-  //   name: "name",
-  //   message: "What is your name?",
+  //   type: "confirm",
+  //   name: "confirmContributor",
+  //   message: "Is there anyone else who contributed to the application?",
+  //   default: "(y/N)",
   // },
-  // {
-  //   type: "input",
-  //   name: "name",
-  //   message: "What is your name?",
-  // },
+  {
+    type: "input",
+    name: "gitHub",
+    message: "Type your github username",
+  },
+  {
+    type: "input",
+    name: "email",
+    message: "Type your email",
+  },
 ];
 
 // TODO: Create a function to write README file
