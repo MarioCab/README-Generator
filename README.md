@@ -1,36 +1,32 @@
+# Dood
 
-  # GoodReadme
+## Description
 
-  ## Description
-  
-   This project helps us make a good readme
+Its lit
 
-   ## Installation
-   
-   Installing inquierer using npm and node.js
-   
-   ## Usage
-   
-   The application can help devvelopers in the fututre make a good readme very easily 
+## Installation
 
-   
-   ## Credits
-   
-   Mario Cabrera
+install the stuff
 
-   ## License
- 
- ![badge](https://img.shields.io/badge/license-apache%202.0-blue)
-  
-  ## Tests
+## Usage
 
-  ## Questions
+do dood things with the boys on a satuday evening
 
-  If you have any questions about the project, or wish to see any other projects, refer to github:
+## Credits
 
-  mariocab98
+everyone
 
-  If you have any further questions feel free to send an email:
+## License
 
-yankeescab@gmai.com
+![badge](https://img.shields.io/badge/license-apache%202.0-blue)
+
+## Tests
+
+(If you have run any tests for your peoject, list them here)
+
+## Questions
+
+If you have any questions about the project, or wish to see any other projects, refer to github: yo
+
+If you have any further questions feel free to send an email to: ss
 

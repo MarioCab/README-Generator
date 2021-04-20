@@ -40,7 +40,7 @@ const questions = [
   {
     type: "input",
     name: "contributor",
-    message: "List the name of the contributor to the application",
+    message: "Who contributed to this project?",
   },
   // {
   //   type: "confirm",
