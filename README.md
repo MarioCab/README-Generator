@@ -1,20 +1,20 @@
-# Dood
+# dad
 
 ## Description
 
-Its lit
+dad
 
 ## Installation
 
-install the stuff
+dad
 
 ## Usage
 
-do dood things with the boys on a satuday evening
+dad
 
 ## Credits
 
-everyone
+dad
 
 ## License
 
@@ -26,7 +26,7 @@ everyone
 
 ## Questions
 
-If you have any questions about the project, or wish to see any other projects, refer to github: yo
+If you have any questions about the project, or wish to see any other projects, refer to github: dad
 
-If you have any further questions feel free to send an email to: ss
+If you have any further questions feel free to send an email to: dad
 

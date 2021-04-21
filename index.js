@@ -4,6 +4,7 @@ const fs = require("fs");
 const util = require("util");
 const path = require("path");
 const generateMarkdown = require("./utils/generateMarkdown");
+const contributorMarkdown = require("./utils/contrib");
 // TODO: Create an array of questions for user input
 const questions = [
   {
@@ -39,17 +40,6 @@ const questions = [
   },
   {
     type: "input",
-    name: "contributor",
-    message: "Who contributed to this project?",
-  },
-  // {
-  //   type: "confirm",
-  //   name: "confirmContributor",
-  //   message: "Is there anyone else who contributed to the application?",
-  //   default: "(y/N)",
-  // },
-  {
-    type: "input",
     name: "gitHub",
     message: "Type your github username",
   },
@@ -57,6 +47,17 @@ const questions = [
     type: "input",
     name: "email",
     message: "Type your email",
+  },
+  {
+    type: "input",
+    name: "contributor",
+    message: "Who contributed to this project?",
+  },
+  {
+    type: "confirm",
+    name: "confirmContributor",
+    message: "Is there anyone else who contributed to the application?",
+    default: "(y/N)",
   },
 ];
 
@@ -67,11 +68,26 @@ function writeToFile(fileName, data) {
 
 // TODO: Create a function to initialize app
 function init() {
-  inquirer
-    .prompt(questions)
-    .then((answers) =>
-      writeToFile("README.md", generateMarkdown({ ...answers }))
-    );
+  inquirer.prompt(questions).then((answers) => {
+    console.log(answers.confirmContributor);
+    if (answers.confirmContributor === true) {
+      inquirer
+        .prompt({
+          type: "input",
+          name: "otherContributors",
+          message: "Name the other contributors",
+        })
+        .then((contributorAnswers) => {
+          console.log(contributorAnswers);
+          writeToFile(
+            "README.md",
+            contributorMarkdown({ ...answers }, contributorAnswers)
+          );
+        });
+      // writeToFile("README.md", generateMarkdown({ ...answers }));
+    }
+    writeToFile("README.md", generateMarkdown({ ...answers }));
+  });
 }
 
 // Function call to initialize app
