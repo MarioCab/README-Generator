@@ -76,6 +76,8 @@ function init() {
           type: "input",
           name: "otherContributors",
           message: "Name the other contributors",
+          default:
+            "Seperate names using only spaces (ex: John Mary Jordan Jackson)",
         })
         .then((contributorAnswers) => {
           console.log(contributorAnswers);
